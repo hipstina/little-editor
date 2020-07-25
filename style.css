@@ -1,7 +1,7 @@
 * { box-sizing: border-box; }
 
 html {
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1rem;
     background: #f7ff9d;
     color: rgb(44,44,35);
@@ -15,29 +15,53 @@ body { margin: 0; }
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 0 15px 0 0;
+    margin: 0 ;
 }
 
 h1 { 
     line-height: 1.2; 
-    margin: 100px 50px 25px 100px;
+    margin: 100px 0 50px 30px;
     padding: 0;
 }
 
 .formDesc {
-    display: block;
+    /* display: block; */
     font-size: .8em;
     color: rgb(44,44,35);
     letter-spacing: 1px;
-    padding: 0;
-    width: 400px;
-    margin: 0 50px 25px 100px;
+    padding: 15px 15px  0 0 ;
+    /* width: 25%; */
+    margin: 0 15px 0 30px ;
+}
+
+@media only screen and (min-width: 700px) {
+   
+    
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+    body { margin: 0 25%; }
+  
+  
 }
 
 h2 { line-height: 1.3; }
 h3 { line-height: 1.4; }
 h4 { line-height: 1.5; }
 h5 { line-height: 1.6; }
-p, ul, ol, li, a, table { line-height: 1.6; }
+p, ul, ol, li, a, table, span { line-height: 1.6; }
 
 form {
     background: #efefef;
@@ -49,7 +73,7 @@ form {
 
 .form-item {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     /* flex: 1 1 0 auto; */
     justify-content: center;
     align-content: center;
@@ -99,41 +123,35 @@ input {
   }
 
   textarea {
-      padding: 30px;
       line-height: 1.6;
-      margin: 15px 15px 30px 15px;
         border: .5px solid #666;
         border-radius: .3em;
         overflow: auto;
-        width: 700px;
-        max-height: 100%;
         resize: none;
+        width: 100%;
+        padding: 30px;
   }
 
   textarea::placeholder {
     color: #666;
-    font-family: -apple-system, BlinkMacSystemFont;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
 hr {
     border: none;
     border-bottom: .5px solid rgb(44,44,35);
-    margin: 30px;
+    margin: 30px auto;
+    
 }
 
 #preview {
     font-family: inherit;
     letter-spacing: 1px;
-    padding: 0 30px;
-      line-height: 1.6;
-      margin: 15px 15px 30px 15px;
-        border: .5px solid #666;
-        border-radius: .3em;
-        overflow: auto;
-        max-height: 450px;
-    width: 700px;
-    min-height: 500px;
-    max-height: 100%;
+    padding: 30px;
+    line-height: 1.6;
+    border: .5px solid #666;
+    border-radius: .3em;
+    overflow: auto;
     background: #fcfcfc;
     box-shadow: 1px 4px 6px #666;
     white-space: pre-line;
@@ -141,7 +159,9 @@ hr {
 
 .editor-wrapper,
 .preview-wrapper {
-    margin: 0 15px 30px 15px;
+    margin: 15px 15px 15px 0;
+    min-height: 500px;
+    max-width: 100%;
 }
 
 .toolbar {

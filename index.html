@@ -3,6 +3,9 @@
 <head>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My little editor: a simple HTML previewer"/>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="style.css" rel="stylesheet">
     <title>My little editor</title>
@@ -10,19 +13,19 @@
 </head>
 
 <header>
-<nav>
+    <h1>My little editor</h1>
 
-</nav>
-</header>
+    <span class="formDesc">Write something in the editor below and use the toolbar to format your post with HTML. </span>
+    <span class="formDesc" contenteditable="true">A preview of your formatted content will display in real time.</span> 
+  
+</header>  <hr>
 
 <body>
 <main>
 <div class="container">
-<h1>My little editor</h1>
-<p id="contentWrapper"></p>
-<span class="formDesc">Write something in the editor below and use the toolbar to format your post with HTML. </span>
-<span class="formDesc" contenteditable="true">A preview of your formatted content will display in real time.</span> 
-<hr>
+
+
+
 
 <div class="toolbar-wrapper" id="tool-bar">
     <ul class="toolbar">
@@ -77,7 +80,7 @@
             maxlength="1500"
             autofocus="true"
             required="required"
-            contenteditable="true">This is a simple note.
+            >This is a simple note.
 
 Bold me.
 
