@@ -1,10 +1,7 @@
 # little-editor
- simple code previewer
+A simple code previewer for common HTML elements.
 
-
-Create a simple editor. 
-
-###v1 Goals:
+### v1 Goals:
 - [x] prompt user to input text 
 - [x] create a previewer to display formatted text
 - [x] create buttons that the user can user to apply styling (bold, italic, underline, highlight)
@@ -16,7 +13,7 @@ Create a simple editor.
 - [ ] ability to undo last action with CTRL+Z
 
 
-###v2 Goals:
+### v2 Goals:
 -  add more formatting options: 
 	+ [ ] link w/ default attributes, img w/ default attr., lists
 	+ [ ] blockquote, q, abbr, sub, sup, small, address, time
@@ -26,5 +23,5 @@ Create a simple editor.
 	+ [ ] main, header, headings, article, section, aside, nav, footer
 	+ [ ] div, p, span
 
-###v3 Goals:
+### v3 Goals:
 - [ ] create an editor that automatically converts markdown into html
