@@ -8,9 +8,9 @@ A simple code previewer for common HTML elements.
 - [x] button to submit formatted submission with author info **HIDDEN**
 - [x] display submitted formatted post on new page
 - [ ] button to download HTML file
-- [ ] button to display cheatsheet
-- [ ] ability to add a file name
-- [ ] ability to undo last action with CTRL+Z
+- [ ] button to display tutorial
+- [ ] add a file name
+- [ ] undo last event with CTRL+Z
 
 
 ### v2 Goals:
@@ -24,4 +24,4 @@ A simple code previewer for common HTML elements.
 	+ [ ] div, p, span
 
 ### v3 Goals:
-- [ ] create an editor that automatically converts markdown into html
+- [ ] convert markdown into html
