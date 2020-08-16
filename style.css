@@ -15,7 +15,7 @@ body { margin: 0; }
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 header {
@@ -73,7 +73,7 @@ form {
 
 .form-item {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row nowrap;
     /* flex: 1 1 0 auto; */
     justify-content: center;
     align-content: center;
@@ -130,11 +130,13 @@ input {
         resize: none;
         width: 100%;
         padding: 30px;
+        font-family: Menlo;
+        font-size: 14px;
   }
 
   textarea::placeholder {
     color: #666;
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: Menlo, system-ui,Consolas, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
 hr {
@@ -160,8 +162,13 @@ hr {
 .editor-wrapper,
 .preview-wrapper {
     margin: 15px 15px 15px 0;
-    min-height: 500px;
+    min-height: 800px;
+    min-width: 400px;
     max-width: 100%;
+}
+
+.preview-wrapper {
+    height: 900px;
 }
 
 .toolbar {
