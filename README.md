@@ -35,7 +35,7 @@ This project came about because I wanted to create a tool for my static website 
 ## Getting Started
 Super easy:
 ```zsh
-$ git clone https://github.com/YOUR-USERNAME/little-editor
+$ git clone https://github.com/hipstina/little-editor
 ```
  
 ## Technologies used
